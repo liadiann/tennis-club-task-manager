@@ -1,0 +1,1 @@
+[![workflow](https://github.com/liadiann/tennis-club-task-manager/actions/workflows/workflow.yml/badge.svg)](https://github.com/liadiann/tennis-club-task-manager/actions/workflows/workflow.yml)
