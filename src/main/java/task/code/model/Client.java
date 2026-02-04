@@ -18,15 +18,15 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 @Getter
 @Setter
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Clients {
+public class Client implements BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
     private Long id;
     @NotBlank
-    private String firstName;
-    @NotBlank
     private String lastName;
+    @NotBlank
+    private String firstName;
     @NotBlank
     private Integer age;
     @NotBlank
