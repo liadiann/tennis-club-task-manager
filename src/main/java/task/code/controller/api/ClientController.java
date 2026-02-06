@@ -21,6 +21,7 @@ public class ClientController {
     private final ClientMapper clientMapper;
 
     @GetMapping
+    @ResponseStatus(HttpStatus.OK)
     public List<ClientDTO> index() {
         var clients = clientRepository.findAll();
         return clients.stream().map(clientMapper::map).toList();
